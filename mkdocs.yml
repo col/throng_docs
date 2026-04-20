@@ -1,10 +1,9 @@
 site_name: Throng Docs
 site_description: Documentation for the Throng platform.
 
-# TODO: fill in once the GitHub repo exists.
-# site_url: https://<org>.github.io/<repo>/
-# repo_url: https://github.com/<org>/<repo>
-# repo_name: <org>/<repo>
+site_url: https://docs.throng.dev/
+repo_url: https://github.com/col/throng-docs
+repo_name: col/throng_docs
 
 theme:
   name: material
