@@ -1,0 +1,44 @@
+site_name: Throng Docs
+site_description: Documentation for the Throng platform.
+
+# TODO: fill in once the GitHub repo exists.
+# site_url: https://<org>.github.io/<repo>/
+# repo_url: https://github.com/<org>/<repo>
+# repo_name: <org>/<repo>
+
+theme:
+  name: material
+  features:
+    - navigation.instant       # SPA-like page loads
+    - navigation.tracking      # URL updates with active anchor
+    - navigation.sections      # top-level nav items render as sections
+    - navigation.top           # "back to top" button
+    - search.suggest
+    - search.highlight
+    - content.code.copy        # copy button on code blocks
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition                 # !!! note / warning / tip blocks
+  - pymdownx.details           # collapsible admonitions
+  - pymdownx.superfences       # nested code/diagram fences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - toc:
+      permalink: true          # ¶ link beside each heading
+
+# nav:                         # uncomment to control sidebar order;
+#   - Home: index.md           # otherwise files are auto-discovered.

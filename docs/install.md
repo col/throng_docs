@@ -1,0 +1,41 @@
+# Install
+
+## macOS (Homebrew)
+
+Throng is distributed via a custom Homebrew tap.
+
+### 1. Tap the repository
+
+```bash
+brew tap col/throng
+```
+
+This registers the `col/throng` tap so Homebrew knows where to find the
+formula.
+
+### 2. Install Throng
+
+```bash
+brew install col/throng/throng
+```
+
+### 3. Run first-time setup
+
+```bash
+throng setup
+```
+
+This prepares config, data directories, and any required local state.
+
+### 4. Start the service
+
+```bash
+brew services start throng
+```
+
+`brew services` runs Throng in the background and re-launches it on login.
+To stop it later, use `brew services stop throng`.
+
+### 5. Verify it's running
+
+Open <http://localhost:4000> — you should see the Throng app.
