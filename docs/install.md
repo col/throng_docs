@@ -38,4 +38,30 @@ To stop it later, use `brew services stop throng`.
 
 ### 5. Verify it's running
 
-Open <http://localhost:4000> — you should see the Throng app.
+Open <http://localhost:7654> — you should see the Throng app.
+
+## Upgrading (Homebrew)
+
+### 1. Update Homebrew
+
+```bash
+brew update
+```
+
+### 2. Upgrade Throng
+
+```bash
+brew upgrade col/throng/throng
+```
+
+### 3. Re-run Throng Setup
+
+```bash
+throng setup
+```
+
+### 4. Start Throng service
+
+```bash
+brew services restart throng
+```
