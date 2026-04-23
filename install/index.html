@@ -418,6 +418,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#upgrading-homebrew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upgrading (Homebrew)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Upgrading (Homebrew)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-update-homebrew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Update Homebrew
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-upgrade-throng" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Upgrade Throng
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-re-run-throng-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Re-run Throng Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-start-throng-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Start Throng service
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -524,6 +585,67 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#upgrading-homebrew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Upgrading (Homebrew)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Upgrading (Homebrew)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-update-homebrew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Update Homebrew
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-upgrade-throng" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Upgrade Throng
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-re-run-throng-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Re-run Throng Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-start-throng-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Start Throng service
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -565,7 +687,20 @@ formula.</p>
 <p><code>brew services</code> runs Throng in the background and re-launches it on login.
 To stop it later, use <code>brew services stop throng</code>.</p>
 <h3 id="5-verify-its-running">5. Verify it's running<a class="headerlink" href="#5-verify-its-running" title="Permanent link">&para;</a></h3>
-<p>Open <a href="http://localhost:4000">http://localhost:4000</a> — you should see the Throng app.</p>
+<p>Open <a href="http://localhost:7654">http://localhost:7654</a> — you should see the Throng app.</p>
+<h2 id="upgrading-homebrew">Upgrading (Homebrew)<a class="headerlink" href="#upgrading-homebrew" title="Permanent link">&para;</a></h2>
+<h3 id="1-update-homebrew">1. Update Homebrew<a class="headerlink" href="#1-update-homebrew" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>brew<span class="w"> </span>update
+</code></pre></div>
+<h3 id="2-upgrade-throng">2. Upgrade Throng<a class="headerlink" href="#2-upgrade-throng" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>brew<span class="w"> </span>upgrade<span class="w"> </span>col/throng/throng
+</code></pre></div>
+<h3 id="3-re-run-throng-setup">3. Re-run Throng Setup<a class="headerlink" href="#3-re-run-throng-setup" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>throng<span class="w"> </span>setup
+</code></pre></div>
+<h3 id="4-start-throng-service">4. Start Throng service<a class="headerlink" href="#4-start-throng-service" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>brew<span class="w"> </span>services<span class="w"> </span>restart<span class="w"> </span>throng
+</code></pre></div>
 
 
 
