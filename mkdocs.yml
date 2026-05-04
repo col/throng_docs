@@ -38,6 +38,10 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true          # ¶ link beside each heading
+  - attr_list
+  - md_in_html
 
-# nav:                         # uncomment to control sidebar order;
-#   - Home: index.md           # otherwise files are auto-discovered.
+nav:
+  - Home: index.md
+  - Installation: install.md
+  - Docker Compose: docker-compose.md
