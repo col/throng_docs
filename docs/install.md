@@ -52,15 +52,19 @@ brew update
 
 ```bash
 brew upgrade col/throng/throng
+
+# or
+
+brew upgrade --restart-service col/throng/throng
 ```
 
-### 3. Re-run Throng Setup
+### 3. Re-run Throng Setup (optional)
 
 ```bash
 throng setup
 ```
 
-### 4. Start Throng service
+### 4. Restart the Throng service
 
 ```bash
 brew services restart throng

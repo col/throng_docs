@@ -69,19 +69,10 @@ on every save — leave it running while you write.
 Commit `pyproject.toml` and `uv.lock` after any of these. Never commit
 `.venv/`.
 
-## Deploying to GitHub Pages
+## Deploying
 
-1. Push this repo to GitHub.
-2. Fill in `site_url`, `repo_url`, and `repo_name` in `mkdocs.yml` (see the
-   `TODO` comment at the top of the file).
-3. Run `uv run mkdocs gh-deploy` — this builds the site and force-pushes it
-   to a `gh-pages` branch on the remote.
-4. In the GitHub repo's **Settings → Pages**, set the source to the
-   `gh-pages` branch (root). The site will be live at `site_url` within a
-   minute or two.
-
-For automated deploys on every push to `main`, add a GitHub Actions workflow
-later — ask Claude when you're ready.
+Run `uv run mkdocs gh-deploy` to build and publish to the `gh-pages` branch.
+The live site updates within a minute or two.
 
 ## Useful links
 
