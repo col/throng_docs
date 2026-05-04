@@ -93,6 +93,3 @@ local development (with the defaults).
   always collide across parallel tasks.
 - **App can't reach a service** — make sure your application reads the same
   environment variable that the Compose file uses for the host port.
-- **Containers from a previous session linger** — list them with
-  `docker compose ls` and remove with
-  `docker compose -p <project-name> down`.
