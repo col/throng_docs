@@ -1,8 +1,9 @@
 # Install
 
-## macOS (Homebrew)
+## macOS & Linux (Homebrew)
 
-Throng is distributed via a custom Homebrew tap.
+Throng is distributed via a custom Homebrew tap. The formula supports both
+macOS and Linux (via [Homebrew on Linux](https://docs.brew.sh/Homebrew-on-Linux)).
 
 ### 1. Tap the repository
 
