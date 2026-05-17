@@ -45,3 +45,5 @@ nav:
   - Home: index.md
   - Installation: install.md
   - Docker Compose: docker-compose.md
+  - Mise: mise.md
+  - Throng Hub: hub.md
